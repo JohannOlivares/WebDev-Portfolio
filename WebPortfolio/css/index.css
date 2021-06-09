@@ -1,0 +1,206 @@
+/*!
+ *    FileName:  index.css
+ *      Author:  Johann Olivares
+ *        Date:  09/29/20
+ *
+ * Description: CSS Styles for my protfolio website
+ *				 
+ * Table od Contents
+ * 1.0 General Syles
+ * 2.0 Navigation Bar Styles
+ * 3.0 Greeting Styles
+ *
+ */
+ 
+ /*General format styles*/
+html, body {
+    background-color: black;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Trebuchet MS', sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1, h2, p, a {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+} 
+/*End of general format styles*/
+
+/*Navigation Bar Styles*/
+#cover {
+	background-image: url('../imgs/back.jpeg');
+	background-repeat: repeat;
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+	height: 100%;
+	width: 100%;
+}
+.nav-bar {
+	padding: 2%;
+	margin: 0;
+	float: right;
+}
+.nav-bar a{
+	text-decoration: none;
+	text-align: center;
+	display: inline;
+	color: white;
+	font-size: 25px;	
+	padding: 10px;	
+	margin-top: 25px;
+}
+.nav-bar a:link {
+	color: white;
+}
+.nav-bar a:hover {
+	text-decoration: underline solid white 8px;
+}
+/*End of Navigation Bar Styles*/
+
+/*Greeting Styles*/
+#greeting {
+	text-align: center;
+	padding: 10%;
+	margin: 0;
+}
+#greeting h1 {
+	font-size: 50px;
+}
+#greeting p {
+	padding-bottom: 5%;
+} 
+#home-btn{
+	list-style-type: none;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	border: 3px solid white;
+	border-radius: 20px;
+	padding: 2%;
+}
+#home-btn:link {
+	color: white;
+}
+#home-btn:hover {
+	background-color: white;
+	color: black;
+	
+}
+/*End of Greeting Styles*/
+
+/*Image Styles*/
+#portfolio img {
+	width: 60%;
+	height: auto;
+	border: 1px solid black;
+}
+
+/*End of Image Styles*/
+
+/*Project Grid Styles*/
+#work-header {
+	text-align: center;
+	padding: 0;
+	margin-top: 5%;
+}
+.grid-container {
+   background-color: black;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 1px 1px;
+   padding: 0;
+   margin: 0 auto 10% auto;
+}
+.grid-item {
+   font-size: 1em;
+   color: white;
+   text-align: center;
+   padding: 0;
+   margin: 0 auto 5% auto;
+}
+.project video {
+	margin: 0;
+	padding: 0;
+}
+.view-btn input[type=submit] {
+	background-color: teal;
+   border: none;
+   color: white;
+   font-size: 1.5em;
+   padding: 1%;
+   margin: auto;
+   width: 40%;
+}
+.view-btn input[type=submit]:hover {
+	background-color: #20b2aa;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.description p {
+	color: white;
+	font-size: 15px;
+	margin: 0 25% 0 25%;
+ }
+/*Project Grid Styles*/
+
+/* Rsaume */
+#resume {
+	height: 100%;
+	margin: auto;
+}
+#resumePDF embed {
+	margin: 100px auto;
+    width: 50%;
+    padding: 10px;
+}
+/* End of Resume*/
+
+/* Contact Form */
+#form-container {
+	height: 100%;
+	margin: auto;
+	padding: 1em;
+}
+.contact-form {
+	background-color: white;
+	text-align: left;
+	font-size: 1.5em;
+	margin: 5% auto; 
+    width: 50%;
+	padding: 2em;
+	border-radius: 5px;
+}
+.contact-form h1 {
+	color: black;
+	font-size: 1em;
+}
+label, input, textarea {
+	display: block;
+	width: 90%;
+	padding: 0;
+	margin: .5em auto;
+	font-size: .8em;
+}
+.contact-form input[type=text] {
+	height: 30px;
+	font-size: .8em;
+}
+.contact-form input[type=submit] {
+	border: none;
+	background-color: teal;
+	color: white;
+	padding: 1em;
+	font-size: .9em;
+}
+.contact-form input[type=submit]:hover {
+	background-color: #20b2aa;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* End of Contact Form */
