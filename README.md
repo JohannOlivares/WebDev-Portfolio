@@ -1,5 +1,7 @@
 # Web Developer Portfolio
-This is my web development portfolio to showcase my skillset and current capabilites for Web Development. There are currently two main projects that I am working on aside from the porfolio itself. Not as grand as some other portfolios I have seen but for it first iteration not bad. Feel free to visit my website by clicking here.
+This is my web development portfolio to showcase my skillset and current capabilites for Web Development. There are currently two main projects that I am working on aside from the porfolio itself. Not as grand as some other portfolios I have seen from much more experienced developers but for my first iteration not bad. Feel free to visit my website by clicking the link below.
+- [Visit My Website]()
+
 
 ## Front-End Languages
 - HTML
