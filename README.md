@@ -10,8 +10,7 @@ This is my web development portfolio to showcase my skillset and current cababil
 
 # Portfolio Demo
 
-
-https://user-images.githubusercontent.com/60246437/121307729-24fb0b00-c8b5-11eb-9bcb-931539ffca14.mov
+https://user-images.githubusercontent.com/60246437/121308294-bcf8f480-c8b5-11eb-8264-d083d9cb9686.mov
 
 
 
