@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/60246437/121308294-bcf8f480-c8b5-11eb-
 
 # Projects (click the links to learn more)
 - [Efit](https://github.com/JohannOlivares/BarberShop-Web-App)
-- [Barber Shop Web Application](http://github.com)
+- [Barber Shop Web Application](https://github.com/JohannOlivares/BarberShop-Web-App)
 
 
 
