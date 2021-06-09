@@ -154,7 +154,7 @@
         $msg = wordwrap($msg,70);
 
         //Setup Email
-        $to = "johannolivares102@gmail.com";
+        $to = "example@gmail.com";
         $headers = 'From: ' . $email;
 
         mail($to, $subject, $msg, $headers);
