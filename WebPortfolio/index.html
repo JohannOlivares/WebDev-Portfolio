@@ -1,0 +1,212 @@
+<!---
+    Author: Johann Olivares
+    File: index.html
+    Version: 2.0
+    Description: The homwpage to my porfolio website.
+-->
+<!doctype html>
+<html lang="eng">
+    <head>
+        <title>Johann Olivares</title>
+	   
+        <!--CSS Styles-->
+	    <link rel="stylesheet" href="css/index.css" type="text/css">
+	    <!--End of CSS Styles-->	   
+		
+    </head>
+    <body>
+
+	        <!--Cover-->
+			<section id="cover" class="child">
+				<!--Navigation Bar-->
+				<nav class="nav-bar">
+					<a href="index.html"> Home </a>
+					<a href="#about"> About </a>
+					<a href="#portfolio"> Portfolio </a>
+					<a href="#form-container"> Contact Me </a>
+					<a href="resume.html" target="_blank" >Resume </a>
+				</nav>
+				<!--End of Navigation Bar-->
+
+				<div id="greeting">
+					<h1>Hello and Welcome</h1>
+					<article>
+						<p> My name is Johann Olivares, I am Web Developer who 
+							desgins and builds amazing web applications.
+						</p>
+						<a id="home-btn" href="#about">Learn More</a>
+					</article>
+				</div>
+
+			</section>
+			<!--End of Cover-->
+
+			<!--About Me-->
+			<section id="about" class="child">
+
+			<div class="list-container">
+
+					<h1>Technical Skills</h1>
+					<ul class="skill-list">
+						<li>
+							<div>
+						 		<img src="imgs/skills/com.png" alt="communications" >
+							</div>
+							Great Interpersonal Skills
+						</li>
+						<li>
+							<div>
+								<img src="imgs/skills/respon.png" alt="responsive" >
+							</div>
+							Responsive Web Design
+						</li>
+						<li>
+							<div>
+								<img src="imgs/skills/debug.png" alt="html" >
+							</div>
+							Testing and Debugging
+						</li>
+			 			<li>
+							<div>
+						 		<img src="imgs/skills/solve.png" alt="html" >
+							</div>
+							 Effective Problem Solving Skills
+						</li>
+					</ul>
+				</div>
+
+				<div class="list-container">
+					<h1>Technologies/Programming Languages</h1>
+					<ul class="lang-list">
+						<li><img src="imgs/languages/html.png" alt="html" ></li>
+						<li><img src="imgs/languages/css.png" alt="css"></li>
+						<li><img src="imgs/languages/javascript.png" alt="javascript"></li>
+						<li><img src="imgs/languages/php.png" alt="php"></li>
+						<li><img src="imgs/languages/mysql.png" alt="mysql"></li>
+					</ul>
+				</div>
+
+				<div class="my-work-btn">
+					<a href="#portfolio"><img src="imgs/arrow.png" height="15" width="40"></a>
+				</div>
+
+			</section>
+			<!--End About Me-->
+
+			<!--Projects-->
+			<section id="portfolio" class="child">
+
+				<div class="grid-container">
+
+					<!--Efit-->
+					<div class="grid-item">
+						<div>
+							<video controls>
+								<source src="files/efitvid1.mp4" type="video/mp4">
+							</video>
+						</div>
+
+						<div class="btn">
+							<a href="https://github.com/JohannOlivares/Efit" target="_blank"> View Code </a>
+						</div>
+					</div>
+					<!--End of Efit-->
+
+					<!--Barber Shop-->
+					<div class="grid-item">
+
+					    <div>
+							<video controls>
+								<source src="files/cutters.mp4" type="video/mp4">
+							</video>
+						</div>
+
+						<div class="btn">
+						    <a href="https://github.com/JohannOlivares/BarberShop-Web-App" target="_blank"> View Code </a>
+						</div>
+
+					</div>	
+					<!--End of Barber Shop-->
+
+					<!--Portfolio-->
+					<div class="grid-item">
+						<!--
+						<img onmouseover="changeURL(this, 'https://media.giphy.com/media/ExkCgcHI7Gqx4hsNny/giphy.gif')" 
+						onmouseout="changeURL(this, 'imgs/projectImgs/port.png')" src="imgs/projectImgs/port.png" alt="Web Developer Portfolio">
+						-->
+						<div>
+							<video controls>
+								<source src="files/port.mp4" type="video/mp4">
+							</video>
+						</div>
+
+						<div class="btn">
+							<a href="https://github.com/JohannOlivares/WebDev-Portfolio" target="_blank"> View Code </a>
+						</div>
+
+					</div>
+					<!--End of Portfolio-->
+
+				</div>
+
+			</section>
+			<!--End of Projects-->	
+
+
+			<!--Email Form-->
+			<section id="form-container" class="child">
+			
+				<form class="contact-form"  method="post">
+					<h1>Feel Free to Contact Me</h1>
+
+					<label>Email</label>
+					<input type="text" name="email" placeholder="Enter Email" required/>
+
+					<label>Subject</label>
+					<input type="text" name="subject" placeholder="Enter Subject" required/>
+
+					<label>Message</label>
+					<textarea name="msg" rows=11 cols=40 maxlength=250 placeholder="Leave a message..." required></textarea>
+					
+					<input type="submit" name="submit" value="Submit"></button>
+				</form>
+
+			</section>
+			<!--End of Email Form-->
+
+
+    </body>
+
+	<!--JavaScript-->
+    <!--<script src="js/hover.js"></script>-->
+	<!--JavaScript-->
+<?php
+	//if submit button was clicked
+    if( isset($_POST['submit']) ) {
+ 
+        //Get Form input
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $msg =  $_POST['msg'];
+
+        //Validatae input
+        $msg = wordwrap($msg,70);
+
+        //Setup Email
+        $to = "johannolivares102@gmail.com";
+        $headers = 'From: ' . $email;
+
+        mail($to, $subject, $msg, $headers);
+
+        
+    
+?>
+        <!--<script>
+            window.alert("Message sent!");
+        </script>
+	-->
+<?php
+    }
+?>
+
+</html>
