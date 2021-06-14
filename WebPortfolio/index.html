@@ -7,8 +7,7 @@
 <!doctype html>
 <html lang="eng">
     <head>
-        <title>Johann Olivares</title>
-	   
+        <title>Johann Olivares</title> 
         <!--CSS Styles-->
 	    <link rel="stylesheet" href="css/index.css" type="text/css">
 	    <!--End of CSS Styles-->	   
@@ -37,14 +36,12 @@
 						<a id="home-btn" href="#about">Learn More</a>
 					</article>
 				</div>
-
 			</section>
 			<!--End of Cover-->
 
 			<!--About Me-->
 			<section id="about" class="child">
-
-			<div class="list-container">
+				<div class="list-container">
 
 					<h1>Technical Skills</h1>
 					<ul class="skill-list">
@@ -89,13 +86,11 @@
 				<div class="my-work-btn">
 					<a href="#portfolio"><img src="imgs/arrow.png" height="15" width="40"></a>
 				</div>
-
 			</section>
 			<!--End About Me-->
 
 			<!--Projects-->
 			<section id="portfolio" class="child">
-
 				<div class="grid-container">
 
 					<!--Efit-->
@@ -148,65 +143,37 @@
 					<!--End of Portfolio-->
 
 				</div>
-
 			</section>
 			<!--End of Projects-->	
 
 
 			<!--Email Form-->
 			<section id="form-container" class="child">
-			
 				<form class="contact-form"  method="post">
-					<h1>Feel Free to Contact Me</h1>
+					
+					<h1>Contact Me</h1>
 
-					<label>Email</label>
-					<input type="text" name="email" placeholder="Enter Email" required/>
+					<div class="info">
+						<label>Email</label>
+					    <input type="text" name="email" placeholder=" Enter Your Email" required/>
 
-					<label>Subject</label>
-					<input type="text" name="subject" placeholder="Enter Subject" required/>
+					   <label>Subject</label>
+					   <input type="text" name="subject" placeholder=" Enter Subject" required/>
+					</div>
+					
 
 					<label>Message</label>
-					<textarea name="msg" rows=11 cols=40 maxlength=250 placeholder="Leave a message..." required></textarea>
+					<textarea name="msg" rows=11 cols=40 maxlength=250 placeholder=" Leave a message..." required></textarea>
 					
-					<input type="submit" name="submit" value="Submit"></button>
+					<input type="submit" name="submit" value="Submit">
 				</form>
-
 			</section>
 			<!--End of Email Form-->
 
+			<footer>
+				<p>@ Copyright Johann LCC</p>
+			</footer>
+
 
     </body>
-
-	<!--JavaScript-->
-    <!--<script src="js/hover.js"></script>-->
-	<!--JavaScript-->
-<?php
-	//if submit button was clicked
-    if( isset($_POST['submit']) ) {
- 
-        //Get Form input
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $msg =  $_POST['msg'];
-
-        //Validatae input
-        $msg = wordwrap($msg,70);
-
-        //Setup Email
-        $to = "johannolivares102@gmail.com";
-        $headers = 'From: ' . $email;
-
-        mail($to, $subject, $msg, $headers);
-
-        
-    
-?>
-        <!--<script>
-            window.alert("Message sent!");
-        </script>
-	-->
-<?php
-    }
-?>
-
 </html>
