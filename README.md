@@ -9,6 +9,7 @@ This is my web development portfolio to showcase my skillset and current capabil
 
 ## Back-End Languages
 - PHP
+- JavaScript
 
 # Portfolio Demo
 
